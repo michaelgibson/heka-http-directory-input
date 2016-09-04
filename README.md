@@ -29,11 +29,13 @@ The names for each Http input must be unique. Any duplicate named configs
 will not be loaded.  
 Ex.  
 
-	[syslog]  
+	[google]  
 	type = "HttpInput"  
+	url = "https://www.google.com"
 	and  
-	[syslog2]  
+	[nagios]  
 	type = "HttpInput"
+	url = "http://nagios.foo.bar"
 
 
 Each config file must have a '.toml' extension. Each file which meets these criteria,
